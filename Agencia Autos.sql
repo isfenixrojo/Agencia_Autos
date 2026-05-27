@@ -174,3 +174,14 @@ CONSTRAINT PK_Pagos PRIMARY KEY (IdPago),
 CONSTRAINT FK_Pagos_Ventas FOREIGN KEY (IdVenta) REFERENCES Ventas(IdVenta),
 CONSTRAINT FK_Pagos_MetodoPago FOREIGN KEY (IdMetodoPago) REFERENCES Metodo_Pago(IdMetodoPago));
 GO
+
+INSERT INTO Marcas VALUES ('Toyota', 'Marca reconocida mundialmente por la confiabilidad, eficiencia de combustible y durabilidad.', 1);
+INSERT INTO Marcas VALUES ('Honda', 'Fabrica vehículos eficientes, seguros y con motores muy confiables.', 1);
+INSERT INTO Marcas VALUES ('Ford', 'Empresa de Estados Unidos famosa por camionetas como la F-150 y deportivos como el Mustang.', 1);
+INSERT INTO Marcas VALUES ('Chevrolet', 'Marca de General Motors que ofrece desde autos compactos hasta pickups y SUVs.', 1);
+INSERT INTO Marcas VALUES ('Nissan', 'Marca japonesa con vehículos accesibles, tecnológicos y eficientes.', 1);
+INSERT INTO Marcas VALUES ('BMW', 'Fabricante premium alemán enfocado en lujo, potencia y experiencia deportiva de manejo.', 1);
+INSERT INTO Marcas VALUES ('Mercedes-Benz', 'Marca de lujo reconocida por su comodidad, tecnología avanzada y vehículos de alta gama.', 1);
+INSERT INTO Marcas VALUES ('Volkswagen', 'Marca alemana famosa por vehículos confiables y populares como el Golf y el Jetta.', 1);
+INSERT INTO Marcas VALUES ('Hyundai', 'Empresa que destaca por ofrecer vehículos modernos, económicos y con buena tecnología.', 1);
+INSERT INTO Marcas VALUES ('Tesla', 'Marca líder en autos eléctricos, conocida por su innovación tecnológica y autonomía.', 1);
