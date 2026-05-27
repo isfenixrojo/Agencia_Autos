@@ -185,3 +185,19 @@ INSERT INTO Marcas VALUES ('Mercedes-Benz', 'Marca de lujo reconocida por su com
 INSERT INTO Marcas VALUES ('Volkswagen', 'Marca alemana famosa por vehículos confiables y populares como el Golf y el Jetta.', 1);
 INSERT INTO Marcas VALUES ('Hyundai', 'Empresa que destaca por ofrecer vehículos modernos, económicos y con buena tecnología.', 1);
 INSERT INTO Marcas VALUES ('Tesla', 'Marca líder en autos eléctricos, conocida por su innovación tecnológica y autonomía.', 1);
+
+CREATE PROCEDURE [dbo].[Usp_SelectMarcas]
+AS
+BEGIN
+	SET NOCOUNT ON;
+	
+	SELECT IdMarca, 
+		   Marca, 
+		   DescripcionMarca, 
+		   Activo
+	FROM Marcas
+	WHERE Activo = 1
+	ORDER BY Marca
+END
+GO
+
